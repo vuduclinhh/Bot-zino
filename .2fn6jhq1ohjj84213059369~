@@ -1,0 +1,130 @@
+module.exports.config = {
+	name: "rankup",
+	version: "1.0.2",
+	hasPermssion: 1,
+	credits: "Mirai Team mod by 723",
+	description: "Thông báo rankup random gif cho từng nhóm, người dùng",
+	commandCategory: "system",
+	dependencies: {
+		"fs-extra": ""
+	},
+	cooldowns: 5,
+	envConfig: {
+		autoUnsend: true,
+		unsendMessageAfter: 5
+	}
+};
+module.exports.onLoad = () => {
+    const fs = require("fs-extra");
+    const request = require("request");
+    const dirMaterial = __dirname + `rankup`;// Thư mục dow về
+    if (!fs.existsSync(dirMaterial + "rankup1.gif")) request /*kiem tra file neu k co tu dong down ve */ 
+    ("https://i.imgur.com/2zmETbM.gif").pipe(fs.createWriteStream(dirMaterial + "rankup1.gif")); //link file & ten file khi luu ve
+    if (!fs.existsSync(dirMaterial + "rankup2.gif")) request /*kiem tra file neu k co tu dong down ve */ 
+    ("https://i.imgur.com/rQJV0Wa.gif").pipe(fs.createWriteStream(dirMaterial + "rankup2.gif")); //link file & ten file khi luu ve
+    if (!fs.existsSync(dirMaterial + "rankup3.gif")) request /*kiem tra file neu k co tu dong down ve */ 
+    ("https://i.imgur.com/ZXMMPQ9.gif").pipe(fs.createWriteStream(dirMaterial + "rankup3.gif")); //link file & ten file khi luu ve
+   if (!fs.existsSync(dirMaterial + "rankup4.gif")) request /*kiem tra file neu k co tu dong down ve */
+                                    ("https://imgur.com/a/z74KQWp.gif").pipe(fs.createWriteStream(dirMaterial + "rankup4.gif")); //link file & ten file khi luu ve
+    if (!fs.existsSync(dirMaterial + "rankup5.gif")) request /*kiem tra file neu k co tu dong down ve  */
+                                      ("https://i.imgur.com/r6sWEZ6.gif").pipe(fs.createWriteStream(dirMaterial + "rankup5.gif")); //link file & ten file khi luu ve
+  if (!fs.existsSync(dirMaterial + "rankup6.gif")) request /*kiem tra file neu k co tu dong down ve  */
+                                      ("https://i.imgur.com/tRJreBg.gif").pipe(fs.createWriteStream(dirMaterial + "rankup6.gif")); //link file & ten file khi luu ve
+  if (!fs.existsSync(dirMaterial + "rankup7.gif")) request /*kiem tra file neu k co tu dong down ve  */ 
+  ("https://imgur.com/a/UXZRoxr.gif").pipe(fs.createWriteStream(dirMaterial + "rankup7.gif")); //link file & ten file khi luu ve
+ if (!fs.existsSync(dirMaterial + "rankup8.gif")) request /*kiem tra file neu k co tu dong down ve  */ 
+  (" https://imgur.com/a/rehcayn.gif").pipe(fs.createWriteStream(dirMaterial + "rankup8.gif")); //link file & ten file khi luu ve
+  if (!fs.existsSync(dirMaterial + "rankup9.gif")) request /*kiem tra file neu k co tu dong down ve  */
+                                      ("https://imgur.com/a/AoKFOBe.gif ").pipe(fs.createWriteStream(dirMaterial + "rankup9.gif")); //link file & ten file khi luu ve
+  if (!fs.existsSync(dirMaterial + "rankup10.gif")) request /*kiem tra file neu k co tu dong down ve  */
+                                      ("https://imgur.com/a/c1sIMYi.gif ").pipe(fs.createWriteStream(dirMaterial + "rankup10.gif")); //link file & ten file khi luu ve
+  if (!fs.existsSync(dirMaterial + "rankup11.gif")) request /*kiem tra file neu k co tu dong down ve  */
+                                      ("https://imgur.com/a/LTQY8vH.gif  ").pipe(fs.createWriteStream(dirMaterial + "rankup11.gif")); //link file & ten file khi luu ve
+  if (!fs.existsSync(dirMaterial + "rankup12.gif")) request /*kiem tra file neu k co tu dong down ve  */
+                                      ("https://imgur.com/a/ZN3dAF5.gif  ").pipe(fs.createWriteStream(dirMaterial + "rankup12.gif")); //link file & ten file khi luu ve
+  if (!fs.existsSync(dirMaterial + "rankup13.gif")) request /*kiem tra file neu k co tu dong down ve  */
+                                      ("https://i.ibb.co/VJ4pr9K/god.gif  ").pipe(fs.createWriteStream(dirMaterial + "rankup13.gif")); //link file & ten file khi luu ve
+  if (!fs.existsSync(dirMaterial + "rankup14.gif")) request /*kiem tra file neu k co tu dong down ve  */
+                                      ("https://i.ibb.co/QpRqsxT/vocuc.gif").pipe(fs.createWriteStream(dirMaterial + "rankup14.gif")); //link file & ten file khi luu ve
+  if (!fs.existsSync(dirMaterial + "rankup15.gif")) request /*kiem tra file neu k co tu dong down ve  */
+                                      ("https://i.ibb.co/q5wBQtr/00874ba32219de41c7713e003dc35369.gif").pipe(fs.createWriteStream(dirMaterial + "rankup15.gif")); //link file & ten file khi luu ve
+if (!fs.existsSync(dirMaterial + "rankup16.gif")) request /*kiem tra file neu k co tu dong down ve  */
+                                      ("https://i.ibb.co/QKQWqMQ/2512.gif").pipe(fs.createWriteStream(dirMaterial + "rankup16.gif")); //link file & ten file khi luu ve
+if (!fs.existsSync(dirMaterial + "rankup17.gif")) request /*kiem tra file neu k co tu dong down ve  */
+                                      ("https://i.ibb.co/m6VQmDD/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f.gif").pipe(fs.createWriteStream(dirMaterial + "rankup17.gif")); //link file & ten file khi luu ve
+}
+// Có sẵn hàm dowload cho newbie không biết thêm gif
+module.exports.handleEvent = async function({ api, event, Currencies, Users, getText }) {
+	var {threadID, senderID } = event;
+	const { createReadStream, existsSync, mkdirSync } = global.nodemodule["fs-extra"];
+
+	threadID = String(threadID);
+	senderID = String(senderID);
+
+	const thread = global.data.threadData.get(threadID) || {};
+
+	let exp = (await Currencies.getData(senderID)).exp;
+	exp = exp += 1;
+
+	if (isNaN(exp)) return;
+
+	if (typeof thread["rankup"] != "undefined" && thread["rankup"] == false) {
+		await Currencies.setData(senderID, { exp });
+		return;
+	};
+
+	const curLevel = Math.floor((Math.sqrt(1 + (4 * exp / 3) + 1) / 2));
+	const level = Math.floor((Math.sqrt(1 + (4 * (exp + 1) / 3) + 1) / 2));
+
+	if (level > curLevel && level != 1) {
+		const name = global.data.userName.get(senderID) || await Users.getNameUser(senderID);
+		var messsage = (typeof thread.customRankup == "undefined") ? msg = getText("levelup") : msg = thread.customRankup,
+			arrayContent;
+
+		messsage = messsage
+			.replace(/\{name}/g, name)
+			.replace(/\{level}/g, level);
+let random = Math.floor(Math.random() * 17) + 1;//random gif , có bao nhiêu thay sau dấu * bấy nhiêu . Thêm gif và đổi tên thành rankup1/2/3.gif
+		if (existsSync(__dirname + "")) mkdirSync(__dirname + "", { recursive: true });
+		if (existsSync(__dirname + `/rankup${random}.gif`)) arrayContent = { body: messsage, attachment: createReadStream(__dirname + `/rankup${random}.gif`), mentions: [{ tag: name, id: senderID }] };
+		else arrayContent = { body: messsage, mentions: [{ tag: name, id: senderID }] };
+		const moduleName = this.config.name;
+		api.sendMessage(arrayContent, threadID, async function (error, info){
+			if (global.configModule[moduleName].autoUnsend) {
+				await new Promise(resolve => setTimeout(resolve, global.configModule[moduleName].unsendMessageAfter * 2000));
+				return api.unsendMessage(info.messageID);
+			} else return;
+		});
+	}
+
+	await Currencies.setData(senderID, { exp });
+	return;
+}
+
+module.exports.languages = {
+	"vi": {
+		"off": "tắt",
+		"on": "bật",
+		"successText": "thành công thông báo rankup!",
+		"levelup": 
+     "----𝙇𝙀𝙑𝙀𝙇𝙐𝙋----\nCon vợ {name} đã lên level {level} rồi cơ à cố gắng tương tác nhiều đạt được level max nhé!! 🐸🚬"
+	},
+	"en": {
+		"on": "on",
+		"off": "off",
+		"successText": "success notification rankup!",
+		"levelup": "{name}, your keyboard hero level has reached level {level}",
+	}
+}
+
+module.exports.run = async function({ api, event, Threads, getText }) {
+	const { threadID, messageID } = event;
+	let data = (await Threads.getData(threadID)).data;
+	
+	if (typeof data["rankup"] == "undefined" || data["rankup"] == false) data["rankup"] = true;
+	else data["rankup"] = false;
+	
+	await Threads.setData(threadID, { data });
+	global.data.threadData.set(threadID, data);
+	return api.sendMessage(`${(data["rankup"] == true) ? getText("on") : getText("off")} ${getText("successText")}`, threadID, messageID);
+}

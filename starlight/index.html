@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./icon/avt.JPG" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title class="head">Nguyen Thanh Loc</title>
+</head>
+<body onkeydown="keydownHandler(event)">
+  <canvas id="bgCanvas"></canvas>
+  <div class="main">
+    <div class="container">
+      <div class="center">
+        <div class="avt">
+          <img src="./icon/avt.jpg" alt="">         
+        </div>
+        <div class="name">
+          <span>Nguyen Thanh Loc</span>  
+        </div>
+      </div>
+      <div class="row">
+        <div class="icon">
+          <a href="https://www.facebook.com/profile.php?id=100083980911228" target="_blank" class="facebook">
+            <img src="https://files.catbox.moe/twxl04.png" alt="">
+          </a>
+          <a href="https://www.tiktok.com/@uhhhhh?lang=vi-VN&is_copy_url=1&is_from_webapp=v1" target="_blank" class="tiktok">
+            <img src="https://files.catbox.moe/ciksp1.png" alt="">
+          </a>
+          <a href="https://www.instagram.com/vdl.zino/" target="_blank" class="instagram">
+            <img src="https://files.catbox.moe/ttwwfd.png" alt="">
+          </a>
+          <a href="https://github.com/vdl.zino" target="_blank" class="github">
+            <img src="https://files.catbox.moe/m439cs.png" alt="">
+          </a>
+        </div>
+      </div>
+      
+    </div>
+    <div class="display">
+      <div class="photo-music">
+        <img src="" alt="" id="img">
+      </div>
+      <div class="text">
+        <div class="text-box">
+          <div class="name-music"></div>
+          <div class="name-music"></div>
+        </div>
+      </div>
+      <i class="singer-name"></i>
+    </div>
+    <div class="player">
+      <i id="back-btn" class="fa-solid fa-backward control-btn "></i>
+      <i id="play-btn" class=" fa-solid fa-play control-btn big " ></i>
+      <i id="pause-btn" class=" fa-solid fa-pause control-btn big " ></i>
+      <i id="next-btn" class="fa-solid fa-forward control-btn "></i>
+      <audio id="audio" preload="metadata" type="audio/mp3" src=""></audio>
+      
+    </div>
+  </div>
+    <script src="./script.js">    
+	     
+    </script>
+</body>
+</html>

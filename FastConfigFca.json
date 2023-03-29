@@ -1,0 +1,21 @@
+{
+	"Language": "vi",
+	"PreKey": "𝘾𝙝𝙤̂̀𝙣𝙜 𝙔𝙚̂𝙪 𝘾𝙪̉𝙖 Ai Kia 😘❤️",
+	"AutoUpdate": true,
+	"MainColor": "#9900FF",
+	"MainName": "[𝐙 𝐈 𝐍 𝐎]",
+	"Uptime": true,
+	"Login2Fa": false,
+	"AutoLogin": false,
+	"BroadCast": false,
+	"EncryptFeature": true,
+	"ResetDataLogin": false,
+	"AutoRestartMinutes": 0,
+	"HTML": {
+		"HTML": true,
+		"UserName": "𝐙 𝐈 𝐍 𝐎",
+		"MusicLink": "https://drive.google.com/uc?export=download&id=1LVsdKNo4MmDz1PsTspKZtlsht1WBpIUu"
+	},
+	"AuthString": " | https://i.imgur.com/RAg3rvw.png Please remove this !, Recommend If You Use getUserInfoV2",
+	"Config": "default"
+}

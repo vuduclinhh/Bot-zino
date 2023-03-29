@@ -1,0 +1,25 @@
+const fs = require("fs");
+module.exports.config = {
+	name: "tinhyeulacaiquaigi",
+    version: "1.0.1",
+	hasPermssion: 0,
+	credits: "PoSua", 
+	description: "no prefix",
+	commandCategory: "Không cần dấu lệnh",
+	usages: "tinhyeulacaiquaigi",
+    cooldowns: 5, 
+};
+
+module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
+	var { threadID, messageID } = event;
+	if (event.body.indexOf("tình yêu là cái quái gì")==0 || (event.body.indexOf("tình yêu là cái quái gì")==0)) {
+		var msg = {
+				body: "𝙐𝙝.. 𝙜𝙖𝙥 𝙙𝙪𝙣𝙜 𝙣𝙜𝙪𝙤𝙞 𝙨𝙚 𝙘𝙤 𝙘𝙖𝙪 𝙩𝙧𝙖 𝙡𝙤𝙞?",
+				attachment: fs.createReadStream(__dirname + `/noprefix/tylcqg.mp4`)
+			}
+			api.sendMessage(msg, threadID, messageID);
+		}
+	}
+	module.exports.run = function({ api, event, client, __GLOBAL }) {
+
+}

@@ -1,0 +1,121 @@
+{
+    "total": [
+        {
+            "id": "1824145471",
+            "count": 713
+        },
+        {
+            "id": "100004899736750",
+            "count": 160
+        },
+        {
+            "id": "100026059477387",
+            "count": 300
+        },
+        {
+            "id": "100033443325957",
+            "count": 0
+        },
+        {
+            "id": "100077414418001",
+            "count": 144
+        },
+        {
+            "id": "100086981358024",
+            "count": 153
+        },
+        {
+            "id": "100088209917539",
+            "count": 62
+        },
+        {
+            "id": "100084348936274",
+            "count": 72
+        }
+    ],
+    "week": [
+        {
+            "id": "1824145471",
+            "count": 0,
+            "name": "Nguyễn Văn Quỳnh"
+        },
+        {
+            "id": "100004899736750",
+            "count": 0,
+            "name": "Nguyễn Trọng Khải"
+        },
+        {
+            "id": "100026059477387",
+            "count": 0,
+            "name": "Nguyễn Trọng Khải"
+        },
+        {
+            "id": "100033443325957",
+            "count": 0,
+            "name": "Người dùng Facebook"
+        },
+        {
+            "id": "100077414418001",
+            "count": 0,
+            "name": "Phạm Xuân Hưởng"
+        },
+        {
+            "id": "100086981358024",
+            "count": 0,
+            "name": "Thái Lê Như"
+        },
+        {
+            "id": "100088209917539",
+            "count": 0,
+            "name": "Bot Hưởng"
+        },
+        {
+            "id": "100084348936274",
+            "count": 0,
+            "name": "Người dùng facebook"
+        }
+    ],
+    "day": [
+        {
+            "id": "1824145471",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100004899736750",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100026059477387",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100033443325957",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100077414418001",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100086981358024",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100088209917539",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100084348936274",
+            "count": 0,
+            "name": "Người dùng facebook"
+        }
+    ],
+    "time": 4
+}

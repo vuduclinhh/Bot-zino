@@ -1,0 +1,44 @@
+{
+  "files": {
+    "FastConfigFca.json": [
+      {
+        "id": "053639f2-f39d-42de-befa-9232213847c2",
+        "line": 21,
+        "version": 46,
+        "index": 577
+      }
+    ],
+    "README.md": [
+      {
+        "id": "69a5eff9-543e-4d82-86e5-a6cdd2090ee4",
+        "line": 1,
+        "version": 113,
+        "index": 0
+      }
+    ],
+    "config.json": [
+      {
+        "id": "70bb8a88-a8bc-4455-a452-09cb0cbfb249",
+        "line": 1,
+        "version": 119,
+        "index": 0
+      }
+    ],
+    "mirai.js": [
+      {
+        "id": "c97ba9da-d2a1-4325-a5ac-5c516193b133",
+        "line": 1,
+        "version": 95,
+        "index": 0
+      }
+    ],
+    "modules/commands/zombie.js": [
+      {
+        "id": "288c4950-3955-4f4c-996d-80e1c11e1df1",
+        "line": 37,
+        "version": 1,
+        "index": 1394
+      }
+    ]
+  }
+}

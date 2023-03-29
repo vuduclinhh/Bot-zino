@@ -1,0 +1,51 @@
+{
+    "total": [
+        {
+            "id": "100002317277047",
+            "count": 8
+        },
+        {
+            "id": "100068940754681",
+            "count": 5
+        },
+        {
+            "id": "100071883787072",
+            "count": 0
+        }
+    ],
+    "week": [
+        {
+            "id": "100002317277047",
+            "count": 0,
+            "name": "Trần Khánh Linh"
+        },
+        {
+            "id": "100068940754681",
+            "count": 0,
+            "name": "Phùng Văn Hà"
+        },
+        {
+            "id": "100071883787072",
+            "count": 0,
+            "name": "Phùng Hùng"
+        }
+    ],
+    "day": [
+        {
+            "id": "100002317277047",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100068940754681",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100071883787072",
+            "count": 0,
+            "name": "Người dùng facebook"
+        }
+    ],
+    "time": 4
+}

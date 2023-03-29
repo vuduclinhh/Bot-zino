@@ -1,0 +1,51 @@
+{
+    "total": [
+        {
+            "id": "100074168000776",
+            "count": 2
+        },
+        {
+            "id": "100065095141252",
+            "count": 7
+        },
+        {
+            "id": "100023250277879",
+            "count": 5
+        }
+    ],
+    "week": [
+        {
+            "id": "100074168000776",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100065095141252",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100023250277879",
+            "count": 0,
+            "name": "Người dùng facebook"
+        }
+    ],
+    "day": [
+        {
+            "id": "100074168000776",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100065095141252",
+            "count": 0,
+            "name": "Người dùng facebook"
+        },
+        {
+            "id": "100023250277879",
+            "count": 0,
+            "name": "Người dùng facebook"
+        }
+    ],
+    "time": 4
+}
